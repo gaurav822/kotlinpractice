@@ -41,7 +41,7 @@ fun main(){
     //val x: String = y as String
 
     //correct way
-    val x: String? = y as String?
+    val x: String? = y as String
     println(x)
 
 

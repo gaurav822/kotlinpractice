@@ -4,21 +4,26 @@ import android.graphics.Color
 import java.util.*
 import java.util.concurrent.Flow
 
-
-
+var scan = Scanner(System.`in`)
 fun main() {
-    getDataType(100)
-    getDataType("100")
-}
 
-fun getDataType(obj:Any){
+    var myLambdaExpression:(Int,Char,Boolean,String) -> Unit = {a,b,c,d -> println("hello world $a$b$c$d")}
 
-     when(obj){
-
-        is Int -> println("Integer")
-        else -> println("Other data type found")
+    var mylambdaFunction2: (Int,Int,Char) -> Unit = {a,b,c ->
+        println(a)
+        println(b)
+        println(c)
     }
+    myHigherOrderFunc(listOf("a","b")){
+            a,b,c,d -> println("hello world $a$b$c$d")
+    }
+
 }
+
+fun myHigherOrderFunc(list:List<String>,func:(Int,Char,Boolean,String)->Unit){
+    func(1,'a',false,"Hello")
+}
+
 
 
 

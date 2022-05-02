@@ -8,13 +8,23 @@ fun main(){
     //println(user.fullName)
 
     var human = Human("Gaurav")
+    human.setA(20)
+    human.getA()
     println(human.hasChild)
     println(human.weight)
-
 
 }
 
 class  Human (var name: String,var age:Int, var weight:Int, var hasChild: Boolean){
+
+    private var a = 100
+    fun setA(a:Int){
+        this.a = a
+    }
+
+    fun getA(){
+        println(a)
+    }
 
     //constructor overloading
     constructor(name: String,age: Int,weight: Int) : this(name, age,weight,true){

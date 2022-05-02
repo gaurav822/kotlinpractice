@@ -22,7 +22,7 @@ because you can never call a method on an object variable that could be null.
      print("The length of string is: ")
      println(a?.length ?: 0) //elvis operator
 
-     val listWithNulls : List<String?> = mutableListOf("Kotlin",null,null,"java","python",null)
+     val listWithNulls : List<String?> = mutableListOf("Kotlin",null,null,"java","python",null,"C++")
 
      for(item in listWithNulls){
          item?.let {
@@ -31,25 +31,21 @@ because you can never call a method on an object variable that could be null.
      }
 
      //val l = c!!.length // converts any value to not-null type
-                        // throws exception if value is null
-
+     //                    throws exception if value is null
      //println(l)
-
      //filtering null values from list containing null values
      val nullableList : List<Int?> = mutableListOf(1,2,3,4,null,6,null)
      var intList =  nullableList.filterNotNull()
-
      println(intList)
 
      //safe cast
      val x: String = "Hello"
      val xInt: Int? = x as? Int
      println(xInt)
-
      //
         var mystr:String? = "hello"
      // println(mystr.length)  cannot do this since it is a nullable type now
-
+     // print(mystr?.length) can work
      if(mystr!=null){
          println(mystr.length)
      }

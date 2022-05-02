@@ -46,7 +46,6 @@ fun main(){
 }
 
 fun<X,Y,Z> myGenericFunction(a:X,b:Y, c:List<Z>){
-
     for(i in c.indices){
         println("$a and $b")
     }

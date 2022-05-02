@@ -5,16 +5,13 @@ import kotlin.math.floor
 import kotlin.math.sqrt
 
 /*
-
 Reusability: Inheritance supports the concept of “reusability”, i.e. when we want to create a new class
 and there is already a class that includes some of the code that we want,
 we can derive our new class from the existing class.
 By doing this, we are reusing the fields and methods of the existing class.
-
- */
+*/
 
 var scan = Scanner(System.`in`)
-
 open class Shape(name: String="shape"){
     open val numOfSides = 0
     val color = "red"

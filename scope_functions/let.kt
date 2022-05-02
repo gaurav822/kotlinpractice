@@ -17,6 +17,7 @@ fun main(){
         println(it.capitalize())
         println(it.length)
     }
+
     //along with let we need to use safe call operator
     //if it is null then statements won't be executed
 

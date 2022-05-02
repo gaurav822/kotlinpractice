@@ -6,6 +6,7 @@ as well as method implementations.
 What makes them different from abstract classes is that interfaces cannot store a state.
 A property declared in an interface can either be abstract or provide implementations for accessors.
 */
+
 interface A {
     fun foo() { println("A") }
     fun bar()
@@ -18,6 +19,7 @@ interface B {
 }
 
 class C : A {
+    var c:String? = null
     override fun bar() {
         TODO("Not yet implemented")
     }
@@ -38,7 +40,9 @@ fun main(){
 
     var d = D()
     var c = C()
-    c.foo()
+    c.c = c.a
+    c.foo()  //accessor implementing parent function containing implementation
+    println("The value of c is ${c.c}")
     println(c.a)
     //d.foo()
 }

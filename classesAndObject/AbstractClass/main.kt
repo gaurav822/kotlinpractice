@@ -9,7 +9,6 @@ while also allowing default method implementations.
 
 //sub class must override abstract functions of parent class
 //abstract classes can have both abstract and non abstract members
-
 */
 
 abstract class Vehicle(val color:String="white", val numOfWheels:Int){

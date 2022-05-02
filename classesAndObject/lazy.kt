@@ -10,6 +10,7 @@ how to deal with this problem?
 //thread safe
 //can be var or val
 //can be nullable or non nullable
+
 val pi by lazy {
     3.14f
 }

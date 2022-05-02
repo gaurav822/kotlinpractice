@@ -17,18 +17,24 @@ Inner class keeps a reference to an object of outer class.
 
 class Bike{
     val brand:String = "apache"
+    fun test(){
+        println("Calling from bike func")
+    }
     class Tyre{
         var brand: String = "CEAT"
         fun info() = println(brand)
     }
     class Transmission{
         val type  = "automatic"
-        fun getTransmissionDetails() = println("The type of bike is $type")
+        fun getTransmissionDetails() {
+            println("The type of bike is $type")
+        }
     }
 
     inner class Engine{
         private val engineType  = "petrol"
         fun getEngineDetails() {
+            test()
             println("The brand is $brand and engineType is $engineType")
         }
 

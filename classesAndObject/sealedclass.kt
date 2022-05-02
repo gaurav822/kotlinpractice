@@ -10,6 +10,10 @@ sealed class cannot be instantiated directly
 but we can instantiate other classes that will extend/inherit sealed class
 sealed class can be inherited within the same file only
 advantage of sealed class ?
+
+The main purpose of a sealed class is to take away the inheritance feature from the class users
+so they cannot derive a class from it.
+One of the best usage of sealed classes is when you have a class with static members.
 */
 
 sealed class Data{
@@ -19,7 +23,6 @@ sealed class Data{
 }
 
 class NetworkFailure(val failure:String) : Data(){
-
 }
 
 fun getData() : Data{

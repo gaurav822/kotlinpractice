@@ -15,19 +15,17 @@ fun main(){
     inLineFunction { println("calling inline function") }
 }
 
- fun inLineFunction(fn:()->Unit){
+fun inLineFunction(fn:()->Unit){
     fn()
     println("Code inside inline function")
 }
 
 //what is the purpose of using inline function ?
-
 /*
 The main advantage is hidden internally
 kotlin internally creates separate class and instances for
 every lambda we have created
 but if we use inline it will simply copy the data without creating extra instances
-
 */
 
  

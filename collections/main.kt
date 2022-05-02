@@ -1,8 +1,6 @@
 package com.pranav.newsapi.kotlin_basics.collections
 
-
 /*
-
 what is collection?
 
 In programming, a collection is a class used to represent a set of similar data type items as a single unit.
@@ -38,7 +36,7 @@ fun main(){
     //list in kotlin
     //random access as well as can have duplicate elements
 
-    //mutablelist
+    //mutableList
     var users = mutableListOf<String>("ram","shyam","gaurav","1","2")
     println(users[1])
     users[2] = "dinesh"
@@ -50,15 +48,15 @@ fun main(){
     println("The new users are:")
     println(newusers)
 
-    var filterdlist = users.filter {
+    var filteredList = users.filter {
         it.length>=4
     }
-    println(filterdlist)
+    println(filteredList)
 
     //set
     //cannot have duplicate elements
 
-    //immutableset
+    //immutableSet
     var set = setOf<Int>(1,2,3,4,5,6,6,5,4,3,2,1) //duplicates are omitted internally
     var avg = set.sum()
     set.average()
@@ -68,20 +66,19 @@ fun main(){
     }
     println()
 
-    //mutableset
+    //mutableSet
     var mutableSet = mutableSetOf<Int>(1,23,34,43,4,3,32,1)
     mutableSet.add(12)
     println(mutableSet.indexOf(1))
     mutableSet.forEach {
         print("$it ")
     }
-
     //map
     //set of key value pairs
     //each key must be unique
 
     var map = mapOf<Int,String>(1 to "one",2 to "two", 3 to "three")
-
     var map2 = mutableMapOf<Int,String>(1 to "one",2 to "two", 3 to "three")
+
 
 }

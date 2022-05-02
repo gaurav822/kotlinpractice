@@ -19,7 +19,6 @@ fun main(){
 
     val duplicateNumbers =  numbersList.also {
         println("The elements are :$it")
-
         it.add(4)
         println("The elements after adding are $it")
         it.remove(2)

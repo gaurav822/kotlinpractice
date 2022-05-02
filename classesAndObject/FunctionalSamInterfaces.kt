@@ -5,6 +5,11 @@ An interface with only one abstract method is called a functional interface,
 or a Single Abstract Method (SAM) interface.
 The functional interface can have several non-abstract members but only one abstract member.
 
+why SAM?
+It was introduced to facilitate Lambda functions.
+Since a lambda function can only provide the implementation for 1 method
+it is mandatory for the functional interface to have ONLY one abstract method.
+
 */
 
 fun interface IntPredicate {

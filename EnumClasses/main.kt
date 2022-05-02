@@ -57,7 +57,7 @@ enum class Transportation(val brand:String,val noOfWheels:Int){
 }
 
 fun main(){
-    //println(AccountType.BRONZE)
+    //println(AccountType.GOLD.ordinal)
     //val accountTypeFromAPI = "silver"
     //val accountType  = AccountType.valueOf(accountTypeFromAPI.uppercase())
     //print(accountType)
