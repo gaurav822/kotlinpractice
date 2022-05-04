@@ -1,5 +1,4 @@
-package com.pranav.newsapi.kotlin_basics.Leetcode
-
+package com.pranav.newsapi.kotlin_basics
 import java.lang.Exception
 
 /*
@@ -20,7 +19,6 @@ examples: ArithmeticException, ArrayIndexOutOfBoundException, NullPointerExcepti
 examples: IOException, SQLException, Internet Exceptions, etc
 */
 
-
 fun main(){
 
     var a = 10
@@ -32,7 +30,9 @@ fun main(){
     try{
         var c = a/b
         println(c)
-        var d = list[4]
+
+        println(100/0)
+        //var d = list[4]
     }
     catch (e:ArrayIndexOutOfBoundsException){
         println("Index out of bound exception")

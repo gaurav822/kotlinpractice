@@ -1,4 +1,4 @@
-package com.pranav.newsapi.kotlin_basics.Core_Concepts
+package com.pranav.newsapi.kotlin_basics.core_concepts
 /*
 
 //object declaration
@@ -7,15 +7,17 @@ No constructors are allowed
 singleton pattern
 you can inherit class/interface
 
+Real world example of singleton pattern?
+Sharing a single washing machine or Sharing a common refrigerator
 */
 
 //object declaration
 object A{
-    val num: Int = 10
+    const val num: Int = 10
 }
 
 object B{
-    val p:Int = 20
+    const val p:Int = 20
 
     fun print(){
         println("Inside object B")
@@ -26,11 +28,8 @@ object SharingWidget{
     private var fblikes = 0
     private var twitterlikes = 0
     private var instafollowers = 0
-
     fun incrementFb() = fblikes++
-
     fun increamenttwitter() = twitterlikes++
-
     fun displayLikes(){
         println("fb likes is $fblikes and twitter likes is $twitterlikes")
     }
@@ -58,6 +57,7 @@ fun main(){
 
     //object expression example
     //only 1 instance... follows object keyword philosophy
+    //It combines both declaring a class and creating an instance of it in one action.
     //example 1
      var testObj = object {
         val x: Int = 10
@@ -77,6 +77,7 @@ fun main(){
         }
     }
 
+
     var obj2 = object : Person("Gaurav Dahal") {
 
         override fun getNameLength() {
@@ -86,7 +87,6 @@ fun main(){
     }
     obj2.getNameLength()
 }
-
 
 interface Cloneable{
     fun clone()

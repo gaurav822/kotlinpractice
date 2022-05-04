@@ -6,11 +6,12 @@ It provides an alternative naming to your existing type to reflect a more readab
 
 typealias stringList = List<String>
 typealias AuthToken = String
- 
+typealias personList = List<Person>
+
 fun main(){
     handledUsers(listOf("gaurav","potato","apple"))
 
-    var login = Login("authtokensample")
+    var login = Login("3434343")
     println(login.authToken)
 }
 

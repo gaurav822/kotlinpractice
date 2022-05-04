@@ -1,5 +1,11 @@
 package com.pranav.newsapi.kotlin_basics.scope_functions
 
+import android.content.Intent
+
+/*
+Scoped functions are functions that execute a block of code within the context of an object
+*/
+
 //let,run,with,also and apply
 
 /*
@@ -19,5 +25,54 @@ and avoid null pointer exception
 apply: If you want to initialise or configure an object
 also: If you want to do some additional object configurations or operations
 */
+
+fun main(){
+
+    //let
+    var number:Int? = null
+
+    //execute block only if number is not null
+    val x = number?.let {
+        val number2 = it+1
+        number2
+    }?: 3
+
+    println(x)
+    var i =5
+    //also
+    //very similar to let
+    //returns the object it was called on
+
+    fun getSquared() =(i*i).also {
+        i++
+    }
+    //function will return (i*i)
+
+
+    //apply
+    //use to initialise/modify object
+
+    val intent = Intent().apply {
+        putExtra("","")
+        putExtra("",0)
+        action= ""
+    }
+
+    //run
+    //equivalent to apply
+    //but it doesn't return object instead returns last line
+
+    val intent2 = Intent().run {
+        putExtra("","")
+    }
+
+    //with
+    with(Intent()){
+
+    }
+
+
+
+}
 
  

@@ -1,4 +1,4 @@
-package com.pranav.newsapi.kotlin_basics.Core_Concepts
+package com.pranav.newsapi.kotlin_basics.core_concepts
 
 // KOTLIN
 class Sample {
@@ -7,7 +7,10 @@ class Sample {
         print(str)
     }
 }
+
+
 fun main() {
+
     var  a = Sample()
     a.str = "Interview"
     var  b = Sample()

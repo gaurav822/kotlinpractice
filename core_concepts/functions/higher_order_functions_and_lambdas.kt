@@ -1,4 +1,4 @@
-package com.pranav.newsapi.kotlin_basics.Core_Concepts.functions
+package com.pranav.newsapi.kotlin_basics.core_concepts.functions
 
 import kotlin.concurrent.thread
 
@@ -81,7 +81,6 @@ fun cookFood(name: String, ingredients:List<String>, callback : (numOfIngre:Int,
 }
 
 //example 3 with thread
-
 fun rollDice (callback:((result:Int   )->Unit)?=null): String{
     thread {
         Thread.sleep(3000)

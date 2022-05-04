@@ -4,12 +4,9 @@ package com.pranav.newsapi.kotlin_basics.classesAndObject
 
 class User (var firstName:String, var lastName:String, var isPlatinum:Boolean) {
 
-
     companion object{
         const val MAX_AGE = 18
     }
-
-
     constructor(firstName: String,lastName: String) : this(firstName,lastName,false){
         println("Inside 2nd constructor")
     }

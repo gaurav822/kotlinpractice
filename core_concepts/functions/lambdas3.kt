@@ -17,7 +17,6 @@ fun main(){
 }
 
 class Addition{
-
     fun addTwoNumbers(a:Int, b:Int, sumInterface: SumInterface){
         var sum = a+b
         sumInterface.findSum(sum)
@@ -25,6 +24,5 @@ class Addition{
 }
 
 interface SumInterface{
-
     fun findSum(sum:Int)
 }

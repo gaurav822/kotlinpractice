@@ -1,4 +1,4 @@
-package com.pranav.newsapi.kotlin_basics.Core_Concepts.functions
+package com.pranav.newsapi.kotlin_basics.core_concepts.functions
 
 //what is lambdas
 // It is just a function with no Name

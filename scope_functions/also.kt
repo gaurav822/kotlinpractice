@@ -5,7 +5,6 @@ fun main(){
     //also
     //return: context object
     //context object : it
-
     //where to use it ?
     //where to want to use additional operation on a particular object
     //after we have initialized it
@@ -24,9 +23,9 @@ fun main(){
         it.remove(2)
         println("The elements are removing are $it")
     }
+
     //returns the context object
     //duplicateNumbers and numbersList are now pointing to the same object
-
     //proof?
     println(numbersList)
     println(duplicateNumbers)

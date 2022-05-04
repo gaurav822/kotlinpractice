@@ -1,4 +1,4 @@
-package com.pranav.newsapi.kotlin_basics.Core_Concepts.functions
+package com.pranav.newsapi.kotlin_basics.core_concepts.functions
 
 fun calcAreaOfCircle(radius:Int): Double{
     return String.format("%.2f",Math.PI* radius*radius).toDouble()

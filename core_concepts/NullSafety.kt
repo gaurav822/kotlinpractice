@@ -1,7 +1,6 @@
-package com.pranav.newsapi.kotlin_basics.Core_Concepts
+package com.pranav.newsapi.kotlin_basics.core_concepts
 
 /*
-
 The benefits to a Null Pointer Safety system is that you can know beforehand
 if you might face a Null Pointer, and act accordingly.
 You can know for sure if something might be null, and do something different.
@@ -51,4 +50,13 @@ because you can never call a method on an object variable that could be null.
      }
 
 
+     //The !! operator
+    // not null assertion operator
+     //converts any value to a non-null type and throws an NPE if the value is null
+
+     var str:String? = "HelloworldHelloworld"
+     //str!!                  //converting str to not null type
+     println(str!!.length)
+
+     var len = str!!.length
  }

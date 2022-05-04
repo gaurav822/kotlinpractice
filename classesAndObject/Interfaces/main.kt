@@ -3,6 +3,8 @@ package com.pranav.newsapi.kotlin_basics.classesAndObject.Interfaces
 import android.widget.Button
 /*
 
+what is interface?
+
 Why do we use an Interface?
 It is used to achieve total abstraction. Since java does not support multiple inheritances in the case of class,
 by using an interface it can achieve multiple inheritances. It is also used to achieve loose coupling.
@@ -15,8 +17,8 @@ and so, changes in one component least affect existence or performance of anothe
 Abstract classes should be used primarily for objects that are closely related,
 whereas interfaces are best suited for providing a common functionality to unrelated classes.
 
-interface members are by default public, abstract
-unless method is implemented or members is instantiated it is abstract by default
+What makes them different from abstract classes is that interfaces cannot store a state.
+They can have properties, but these need to be abstract or provide accessor implementations
 */
 
 interface Actor{

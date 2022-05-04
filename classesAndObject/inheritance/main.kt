@@ -5,6 +5,13 @@ import kotlin.math.floor
 import kotlin.math.sqrt
 
 /*
+What is inheritance?
+something that can be inherited, act of inheriting property
+It is a mechanism in which one class acquires
+the properties of another class.
+*/
+
+/*
 Reusability: Inheritance supports the concept of “reusability”, i.e. when we want to create a new class
 and there is already a class that includes some of the code that we want,
 we can derive our new class from the existing class.

@@ -17,7 +17,15 @@ One of the best usage of sealed classes is when you have a class with static mem
 */
 
 sealed class Data{
-    data class Success(val data:String) :Data()
+    companion object{
+        val MIN_VALUE = - 100000
+        val MAX_VALUE = 100000
+    }
+    data class Success(val data:String) :Data(){
+        companion object {
+            val successString = "Yahoo Success"
+        }
+    }
     data class Error(val error:String) : Data()
     object Loading: Data()
 }
@@ -30,6 +38,7 @@ fun getData() : Data{
 }
 
 fun main(){
+    Data.Success.successString
     when(val data = getData()){
         is Data.Success -> println(data)
         is Data.Error -> println(data)

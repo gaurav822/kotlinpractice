@@ -1,5 +1,26 @@
 package com.pranav.newsapi.kotlin_basics.classesAndObject
 
+/*
+
+class is blueprint for object
+class represents the set of properties or methods that are common to all objects of one type.
+It is logical representation of data.
+
+object is instance of class
+represents real world entity
+it has state and behaviours
+
+what are constructors ?
+constructors are the special methods that are automatically called
+when the object is created.
+The constructor is used in java programming to assign the default value of instance variables.
+Constructor is used to initializing objects of a class and allocate appropriate memory to objects.
+
+types?
+primary
+secondary
+*/
+
 
 fun main(){
 

@@ -1,7 +1,13 @@
 package com.pranav.newsapi.kotlin_basics.EnumClasses
 
 /*
+An enum is a special "class" that represents a group of constants
+(unchangeable variables, like final variables
+
 You should use enum types any time you need to represent a fixed set of constants.
+
+Enums are used when we know all possible values at compile-time,
+such as choices on a menu, rounding modes, command-line flags, etc.
  */
 
 

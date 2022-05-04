@@ -1,4 +1,4 @@
-package com.pranav.newsapi.kotlin_basics.Core_Concepts.functions
+package com.pranav.newsapi.kotlin_basics.core_concepts.functions
 
 /*
 An inline function is declared with keyword inline

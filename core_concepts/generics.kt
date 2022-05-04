@@ -1,4 +1,4 @@
-package com.pranav.newsapi.kotlin_basics.Core_Concepts
+package com.pranav.newsapi.kotlin_basics.core_concepts
 
 /*
 what is generics?
@@ -23,7 +23,18 @@ class ArrayUtil<T>(private val array:Array<T>){
         return
     }
 }
+
+fun<T> searchElement(list: List<T>,element: T):Int?{
+    if(list.contains(element)){
+        return list.indexOf(element)
+    }
+    return null
+}
+
+
 fun main(){
+
+    println(searchElement(listOf("a","b","c","d"),"d"))
 
     val arrayUtil = ArrayUtil<Int>(arrayOf(1,2,3,4,5))
     val arrayUtil2 = ArrayUtil<String>(arrayOf("abcd","hello","hi"))

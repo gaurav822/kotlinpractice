@@ -7,11 +7,13 @@ why to use nested class ?
 nested classes enable you to logically group classes that are only used in one place,
 increase the use of encapsulation,
 and create more readable and maintainable code.
+object if nested class can only be created with the name of outer class
 
 why to use inner class ?
 The advantage of inner class over nested class is that,
 it is able to access members of outer class even it is private.
 Inner class keeps a reference to an object of outer class.
+object of inner class can only be created with the object of outer class
 
 */
 
@@ -44,6 +46,7 @@ class Bike{
  
 fun main(){
     //tyre and transmission can be accessed by class Name
+
     val tyre  = Bike.Tyre()
     tyre.info()
     val trans = Bike.Transmission()

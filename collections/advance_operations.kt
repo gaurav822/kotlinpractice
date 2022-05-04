@@ -19,7 +19,6 @@ fun main(){
     println(friendGroup.none{
         it.age<18
     })
-
     //checks condition for all element
     friendGroup.all {
         it.age>10
@@ -33,8 +32,6 @@ fun main(){
     println(objects.chunked(3){
         it.reversed()
     })
-
-
     println(objects.windowed(3))
 
 

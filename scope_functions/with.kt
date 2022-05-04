@@ -37,7 +37,7 @@ fun main(){
 }
 
 class Person{
-
     var name: String = "Gaurav Dahal"
     var age: Int =24
+    var country:String = "Nepal"
 }

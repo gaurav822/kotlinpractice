@@ -3,6 +3,9 @@ package com.pranav.newsapi.kotlin_basics.classesAndObject.AbstractClass
 //instance of abstract classes cannot be created
 /*
 
+The main purpose of abstraction is hiding the unnecessary details from the users
+and displaying only essential information
+
 Abstract classes cannot be instantiated and are designed to be subclassed.
 They are used to provide some common functionality across a set of related classes
 while also allowing default method implementations.
